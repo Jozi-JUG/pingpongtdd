@@ -1,6 +1,9 @@
 # pingpongtdd
 Repo for solution to Jozi-Jug January 2015 session - http://www.meetup.com/Jozi-JUG/events/227689917
 
+This exercise is to create a unit of code that converts Arabic numbers (that is, the
+main number system used in the Western world today) into Roman numerals.
+We’re going to show how the development proceeds when we work in the smallest possible increments
 
 Pavel:
 
@@ -39,7 +42,6 @@ Pavel:
 		assertEquals(RomanConverter.Convert("V"), 5);
 	}
 
- 
 Rory:
 
 	public class RomanConverter {
@@ -67,7 +69,7 @@ Pavel:
 		{
 			int sum = 0;
 			for (int i = 0; i < s.length(); i++) {
-				if (s.charAt(i) == ‘I’) {
+				if (s.charAt(i) == â€˜Iâ€™) {
 					sum += 1;
 				}
 				else {
