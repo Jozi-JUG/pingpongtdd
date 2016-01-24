@@ -69,7 +69,7 @@ Pavel:
 		{
 			int sum = 0;
 			for (int i = 0; i < s.length(); i++) {
-				if (s.charAt(i) == â€˜Iâ€™) {
+				if (s.charAt(i) == 'I') {
 					sum += 1;
 				}
 				else {
