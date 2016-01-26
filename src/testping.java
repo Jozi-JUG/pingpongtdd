@@ -7,83 +7,95 @@ public class testping {
 
 	@Test
 	public void testNumber1() {
-		assertEquals(RomanConverter.Convert("I"), 1);
+		assertEquals(1,RomanConverter.Convert("I"));
 	}
-	
+
 	@Test
 	public void testNumber2() {
-		assertEquals(RomanConverter.Convert("II"), 2);
+		assertEquals(2,RomanConverter.Convert("II"));
 	}
-	
+
 	@Test
 	public void testNumber5() {
-		assertEquals(RomanConverter.Convert("V"), 5);
+		assertEquals(5,RomanConverter.Convert("V"));
 	}
-	
+
 	@Test
 	public void test2DifferentNumber() {
-		assertEquals(RomanConverter.Convert("VI"), 6);
+		assertEquals(6,RomanConverter.Convert("VI"));
 	}
-	
+
 	@Test
 	public void testSmallchar() {
-		assertEquals(RomanConverter.Convert("vi"), 6);
+		assertEquals(6,RomanConverter.Convert("vi"));
 	}
+
 	@Test
-	public void testX(){
-		assertEquals(RomanConverter.Convert("x"),10);
+	public void testX() {
+		assertEquals(10,RomanConverter.Convert("x"));
 	}
+
 	@Test
-	public void testL(){
-		assertEquals(RomanConverter.Convert("l"),50);
+	public void testL() {
+		assertEquals(50,RomanConverter.Convert("l"));
 	}
+
 	@Test
-	public void testC(){
-		assertEquals(RomanConverter.Convert("C"),100);
+	public void testC() {
+		assertEquals(100,RomanConverter.Convert("C"));
 	}
+
 	@Test
-	public void testD(){
-		assertEquals(RomanConverter.Convert("D"),500);
+	public void testD() {
+		assertEquals(500,RomanConverter.Convert("D"));
 	}
+
 	@Test
-	public void testM(){
-		assertEquals(RomanConverter.Convert("M"),1000);
+	public void testM() {
+		assertEquals(1000,RomanConverter.Convert("M"));
 	}
-	@Test(expected=RuntimeException.class)
-	public void testA(){
+
+	@Test(expected = RuntimeException.class)
+	public void testA() {
 		RomanConverter.Convert("A");
 	}
-	
-	@Test(expected=RuntimeException.class)
-	public void testNull(){
+
+	@Test(expected = RuntimeException.class)
+	public void testNull() {
 		RomanConverter.Convert("");
 	}
+
 	@Test
 	public void testNumber4() {
-		assertEquals(RomanConverter.Convert("IV"), 4);
+		assertEquals(4,RomanConverter.Convert("IV"));
 	}
+
 	@Test
 	public void testNumber40() {
 		assertEquals(RomanConverter.Convert("XL"), 40);
 	}
+
 	@Test
 	public void testNumber9() {
 		assertEquals(RomanConverter.Convert("IX"), 9);
 	}
+
 	@Test
 	public void testNumber90() {
 		assertEquals(RomanConverter.Convert("XC"), 90);
 	}
+
 	@Test
 	public void testNumber400() {
 		assertEquals(RomanConverter.Convert("CD"), 400);
 	}
+
 	@Test
 	public void testNumber999() {
 		assertEquals(RomanConverter.Convert("CMXCIX"), 999);
 	}
-	
-	@Test(expected=RuntimeException.class)
+
+	@Test(expected = RuntimeException.class)
 	public void testInvalidRepetition() {
 		RomanConverter.Convert("IIII");
 	}

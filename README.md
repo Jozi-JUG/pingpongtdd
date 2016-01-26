@@ -1,19 +1,18 @@
 # pingpongtdd
 Repo for solution to Jozi-Jug January 2015 session - http://www.meetup.com/Jozi-JUG/events/227689917
 
-This exercise is to create a unit of code that converts Arabic numbers (that is, the
-main number system used in the Western world today) into Roman numerals.
-We’re going to show how the development proceeds when we work in the smallest possible increments
+This exercise is to create a unit of code that converts Roman numbers into Arabic numerals.
+Were going to show how the development proceeds when we work in the smallest possible increments
 
-Pavel:
+Player2:
 
 	@Test
 	public void testNumber1() {
-		assertEquals(RomanConverter.Convert("I"), 1);
+		assertEquals(1,RomanConverter.Convert("I"));
 	}
 
 
-Rory:
+Player1:
 
 	public class RomanConverter {
 			public static int Convert(String s) 
@@ -24,11 +23,11 @@ Rory:
 
 	@Test
 	public void testNumber2() {
-		assertEquals(RomanConverter.Convert("II"), 2);
+		assertEquals(2,RomanConverter.Convert("II"));
 	}
 
 
-Pavel:
+Player2:
 
 	public class RomanConverter {
 		public static int Convert(String s) 
@@ -39,10 +38,10 @@ Pavel:
 
 	@Test
 	public void testNumber5() {
-		assertEquals(RomanConverter.Convert("V"), 5);
+		assertEquals(5,RomanConverter.Convert("V"));
 	}
 
-Rory:
+Player1:
 
 	public class RomanConverter {
 		public static int Convert(String s) 
@@ -58,11 +57,11 @@ Rory:
 
 	@Test
 	public void testTwoDifferentNumbers() {
-		assertEquals(RomanConverter.Convert("VI"), 6);
+		assertEquals(6,RomanConverter.Convert("VI"));
 	}
 
 
-Pavel:
+Player2:
 
 	public class RomanConverter {
 		public static int Convert(String s) 
@@ -82,10 +81,10 @@ Pavel:
 
 	@Test
 	public void testSmallchar() {
-		assertEquals(RomanConverter.Convert("vi"), 6);
+		assertEquals(6,RomanConverter.Convert("vi");
 	}
 
 
-Rory and Pavel to show the final solution with RegEx.
+Continue until the final solution (with RegEx).
 
 
