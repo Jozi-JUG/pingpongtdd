@@ -4,7 +4,7 @@ Repo for solution to Jozi-Jug January 2015 session - http://www.meetup.com/Jozi-
 This exercise is to create a unit of code that converts Roman numbers into Arabic numerals.
 Were going to show how the development proceeds when we work in the smallest possible increments
 
-Player2:
+Player 1:
 
 	@Test
 	public void testNumber1() {
@@ -12,7 +12,7 @@ Player2:
 	}
 
 
-Player1:
+Player 2:
 
 	public class RomanConverter {
 			public static int Convert(String s) 
@@ -27,7 +27,7 @@ Player1:
 	}
 
 
-Player2:
+Player 1:
 
 	public class RomanConverter {
 		public static int Convert(String s) 
@@ -41,7 +41,7 @@ Player2:
 		assertEquals(5,RomanConverter.Convert("V"));
 	}
 
-Player1:
+Player 2:
 
 	public class RomanConverter {
 		public static int Convert(String s) 
@@ -61,7 +61,7 @@ Player1:
 	}
 
 
-Player2:
+Player 1:
 
 	public class RomanConverter {
 		public static int Convert(String s) 
