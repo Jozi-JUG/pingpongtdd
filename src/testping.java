@@ -72,27 +72,27 @@ public class testping {
 
 	@Test
 	public void testNumber40() {
-		assertEquals(RomanConverter.Convert("XL"), 40);
+		assertEquals(40,RomanConverter.Convert("XL"));
 	}
 
 	@Test
 	public void testNumber9() {
-		assertEquals(RomanConverter.Convert("IX"), 9);
+		assertEquals(9,RomanConverter.Convert("IX"));
 	}
 
 	@Test
 	public void testNumber90() {
-		assertEquals(RomanConverter.Convert("XC"), 90);
+		assertEquals(90,RomanConverter.Convert("XC"));
 	}
 
 	@Test
 	public void testNumber400() {
-		assertEquals(RomanConverter.Convert("CD"), 400);
+		assertEquals(400,RomanConverter.Convert("CD"));
 	}
 
 	@Test
 	public void testNumber999() {
-		assertEquals(RomanConverter.Convert("CMXCIX"), 999);
+		assertEquals(999,RomanConverter.Convert("CMXCIX"));
 	}
 
 	@Test(expected = RuntimeException.class)
