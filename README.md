@@ -1,6 +1,8 @@
 # pingpongtdd
 Repo for solution to Jozi-Jug January 2015 session - http://www.meetup.com/Jozi-JUG/events/227689917
 
+If you're interested in having tests in Spock and Groovy instead of JUnit, you can check out the groovy branch.
+
 This exercise is to create a unit of code that converts Roman numbers into Arabic numerals.
 Were going to show how the development proceeds when we work in the smallest possible increments
 
